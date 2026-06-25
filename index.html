@@ -3,436 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title<QUWWAT | By The Ahmeds</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>QUWWAT V2 | Premium Nutrition</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
 
 body{
-background:#ffffff;
+background:linear-gradient(
+180deg,
+#ffffff 0%,
+#fafafa 15%,
+#f3f4f6 35%,
+#e5e7eb 60%,
+#d1d5db 85%,
+#cbd5e1 100%
+);
 color:#111827;
 overflow-x:hidden;
 }
 
-/* HEADER */
-
 .top-header{
 position:sticky;
 top:0;
-z-index:9999;
-background:#fff;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+background:rgba(255,255,255,.88);
+backdrop-filter:blur(16px);
+border-bottom:1px solid rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .header-top{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:10px 5%;
-gap:20px;
-flex-wrap:wrap;
+align-items:center;
+padding:14px 5%;
 }
 
-/* BIGGER LOGO */
-
 .logo img{
-height:200px;
-max-width:500px;
-width:auto;
-object-fit:contain;
+height:95px;
 display:block;
 }
 
-/* SEARCH BAR */
-
-.search-wrapper{
-flex:1;
-max-width:700px;
-position:relative;
-}
-
-.search-box{
-width:100%;
-padding:16px 20px;
-border:1px solid #d1d5db;
-border-radius:12px;
-font-size:1rem;
-outline:none;
-}
-
-.search-box:focus{
-border-color:#2563eb;
-}
-
-.search-suggestions{
-position:absolute;
-top:100%;
-left:0;
-width:100%;
-background:#fff;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-display:none;
-}
-
-.search-item{
-padding:14px 18px;
-cursor:pointer;
-border-bottom:1px solid #eee;
-}
-
-.search-item:hover{
-background:#f8fafc;
-}
-
-/* CART */
-
-.cart-btn{
-display:flex;
-align-items:center;
-gap:10px;
+.btn{
+padding:14px 28px;
+border-radius:999px;
 text-decoration:none;
-color:#111;
 font-weight:700;
-font-size:1rem;
+transition:.3s;
+display:inline-block;
 }
 
-.cart-count{
+.btn-primary{
 background:#111827;
 color:white;
-width:22px;
-height:22px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:.75rem;
 }
 
-/* NAVBAR */
-
-.navbar{
-background:#fff;
-border-top:1px solid #eee;
+.btn-primary:hover{
+transform:translateY(-3px);
 }
 
 .navbar ul{
 display:flex;
 justify-content:center;
-gap:40px;
+gap:30px;
 list-style:none;
-padding:18px;
-flex-wrap:wrap;
+padding:16px;
 }
 
 .navbar a{
 text-decoration:none;
 color:#111827;
 font-weight:600;
-transition:.3s;
 }
-
-.navbar a:hover{
-color:#2563eb;
-}
-
-/* HERO */
 
 .hero{
 padding:60px 5%;
 text-align:center;
+background:#ffffff;
 }
 
 .hero-banner{
 width:100%;
 max-width:1400px;
-display:block;
-margin:auto;
-border-radius:25px;
+border-radius:28px;
 box-shadow:0 20px 50px rgba(0,0,0,.12);
 }
 
-.hero-buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:16px 40px;
-border-radius:50px;
-font-weight:700;
-text-decoration:none;
-transition:.3s;
-}
-
-.btn-primary{
-background:#2563eb;
-color:white;
-}
-
-.btn-primary:hover{
-transform:translateY(-4px);
-}
-
-.btn-outline{
-border:2px solid #111827;
-color:#111827;
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.btn-outline img{
-width:24px;
-height:24px;
-}
-
-.btn-outline:hover{
-background:#111827;
-color:white;
-}
-
 section{
-padding:100px 5%;
+padding:80px 5%;
 }
 
 .section-title{
-text-align:center;
 font-size:3rem;
+text-align:center;
 margin-bottom:50px;
 }
 
-@media(max-width:768px){
-
-.logo img{
-height:75px;
-max-width:300px;
-}
-
-.header-top{
-flex-direction:column;
-}
-
-.search-wrapper{
-width:100%;
-}
-
-.navbar ul{
-gap:15px;
-}
-
-.section-title{
-font-size:2rem;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header class="top-header">
-
-<div class="header-top">
-
-<a href="#" class="logo">
-<img src="ChatGPT Image Jun 13, 2026, 12_36_31 PM.png">
-</a><div style=" font-size:120px; font-weight:900; font-family:Arial,sans-serif; color:rgb(215, 240, 93); display:inline-block; line-height:1; margin:0; padding:0; border:none; outline:none; text-decoration:none; box-shadow:none; ">  </div>
-<div style="
-font-size:90px;
-font-weight:900;
-font-family:'Poppins',sans-serif;
-letter-spacing:8px;
-text-transform:uppercase;
-
-background:linear-gradient(
-135deg,
-#000000 0%,
-#ff9900 35%,
-#ffaa00 70%,
-#ff7b00 100%
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-</div>
-0 0 8px rgb(0, 0, 0),
-0 0 18px rgb(0, 0, 0),
-0 6px 12px rgba(0, 0, 0, 0);
-">
-QUWWAT
-
-
-</div>
-<div class="search-wrapper"> <input
-type="text"
-class="search-box"
-id="searchInput"
-placeholder="Search products...">
->
-<div class="search-suggestions" id="suggestions">
-
-<div class="search-item">QUWWAT 250g</div>
-<div class="search-item">QUWWAT 500g</div>
-<div class="search-item">QUWWAT Protein Powder</div>
-<div class="search-item">QUWWAT Nutrition</div>
-
-</div>
-
-</div>
-
-<a href="#" class="cart-btn">
-🛒 Cart
-<span class="cart-count">0</span>
-</a>
-
-</div>
-
-<nav class="navbar">
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#about">Benefits</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-<section class="hero" id="home">
-
-<img
-src="ChatGPT Image Jun 13, 2026, 12_24_26 PM.png"
-alt="QUWWAT Banner"
-class="hero-banner">
-
-<div class="hero-buttons">
-
-<a href="#products" class="btn btn-primary">
-SHOP NOW
-</a>
-
-<a href="https://wa.me/923337632631"
-class="btn btn-outline">
-
-<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBBAcDAv/EAEUQAAEDAwEEBQgGCAQHAAAAAAEAAgMEBREGEiExQVFhcYGxExQiUnKRodEHM0Jic8EVIyQyNUOy4TZjw/BEU4KSk6LC/8QAGgEBAQADAQEAAAAAAAAAAAAAAAUDBAYBAv/EADURAAEDAgQDBwMDAwUAAAAAAAABAgMEEQUSITFBUYETIjIzQmHBNHGxI5GhFNHxJFJi4fD/2gAMAwEAAhEDEQA/AO4oAgGUB41M8VPG6WZwa1oySV4rkal1PiSRrGq5y2RCrXG7z1hcyMmGA/ZacOd2n8lMmqXP0bohz9XiL5Fys0Qjxhu5oGFqk33GUPBlAMoBlAMoBlAMoBlAMoBlAMoDOUBgHBB4EcCDgjsK9RVRbofSOVNlsTFsvjonCKtcXsO4Sc29vV1rdgqrd15YpMSW+SX9yyte1zQ5pyDwIVAtoqLsfSHoQBAEAQHy44QFOvFxdXVJax37PGSGD1j63yUqpmzuypshzOIVazPyJ4U/k0MrWuT7jKXFxlLi4ylxcZS4uMpcXBOOKAZS4CXFzG0lwZylxcZS4uMpcXGUuLjKXFzBKAnNOXEtkFFM7LXHMX3T6v5rfpZr9xxbwyrVf0XdCzA5W+WzKAIAgCAi9R1RprY/Ydh8pEbe/j8MrBUvyRrY06+ZYoFVNym5xuHJRzlBlAMoBlAMoBlLKux6iKq2Qk6OyVtSA5zRDH0ycT2D5rajo3u8WhRgwyaTV/dQmafTlIz618sp63bI+C220kbSmzCqdvi1NtlmtzP+EjPtDa8Vl7GPkbLaOnbsxDLrRbnDHmcI7G48EWGNeB6tJAvoT9jWn09QvB8mJIj915PisbqWJ3A134ZTO2S32Ims09Uw76VwmaPsnc75Fa0lE5PAT5sJe3WJb+3EiHtdG5zJGlr2neHDBC1HNVq2doSnsdGuV6WU+cr5PkZQDKAZQAOc0h0Z2XtO009B5L1rlaqKnA9a5WKjk4F9oagVVLDUN4SMBPUVcY7M1FOyiej2I9OJsr6MgQBAEBWdZPIdRMzuJe73bPzWjXbIhFxle6xPuVzKnEJdxlAMoBntQHtSU01ZOIYG5ed56GjpPQvuOJ0i2QzQU8k7srELfarLT0TWvcBLOOMjhw7ByVaKBsf3OlpqKOBNNV5mxW19NQjNRK1hPBvEnsC+3yNYl3KZpp44Uu9bEJVapfwpKYD70p/IfNab65PQhKlxhE0jb+5oP1DcnnImazqbGPzysK1knCxqOxWpXaydDDb/AHIHPnAPU6Nv5LxKyQJilTzT9jcp9UVDXAVNPHIOmPLT7jnPwWVlavqQ2I8YW9pGkzQ3ajriGxSbMh/lv3HuW5HMx+ylSCrhn8C6ntX26mro8Tx+kB6Lxuc3sX0+Nr0s4yT08czbPQp9zts9ukw/04nfuSAce3oKlTU7o19jmquifTrfdvM0srAaQyh6MoBlAXHSzi60R5+y5zfiq1Kt4kOpw1b0zSYWybwQBAEBVdafXUHsy/8AwtCu9PUiYzszr8FczuCnkIbSAbSA9aaGWrnZBTt2nvPPgOs9S+2MV7sqGWGF0z8jeJebZb4bfTiKIBzuL3kb3lWI42xplQ6unp2QsyNIy93/AM3c6moSDNwfJxDPmVrz1KM7rdzSrcRSK7I9XfwhVpJXSPc+R7nvdxc45JU1zlct1W5z75HPW7lufOV4fAygGUAygGd4PMcEuu56iqi3QsFn1C+LZguDi+I7hNxLfa6R1regqvS8tUWJLoyX9/7llnihqqcslY2SNw4HmqCojksuxac1sjbO2Uo92t8ltqjG7Lonb439I6D1qPUQrG72OWraV1O/2XY0tpYDTG0gGUBc9Jfwgfiv8VXpPKTqdRhn0ydSaWyUAgCAICp63OJqD2ZfFi0K7ZvUh4z6OvwVvO4KcQxlAM9KAuGlLf5vS+dzD9bOPRHqs5e/iq1LFkbdd1Omw2lSGPMu6/gzqi7GjiFNTuxUSDe4fYb09qVM3ZpZNxiNX2DMrPEpTcqTfipzSqqrqbFLRVVYHebQPkAOC4bgCsrIXv1RDPDSzTJdiXPiohlppTFPGY5AMlp6F8vY5i2cY5YnxOyvQ88r4MYygGUAygGUBYtK3YslbQ1DssP1Tj9k+r2dCoUk/ocW8LrF8l/Qn7zQtuNC+EECQelG71Xcu7ktuWNJGK1SpVQJURKxTnztppIeNlzTskdBHJRVRUWynIuarVVq8BleHhjKAu2kP4O38V/iq9J5SHUYZ9MnUm1slAIAgCAqOuTia3+zL4sWhXenqQ8Z9HX4KzngpxDGUBtWum8+uNPTHe2R3peyBk+HxWWBmd6IbFHH2tQ1inRJXMpoXSOw2ONpJxyAVpVRqXOucqNb7Ic2q6t9ZUyVEudqQ5wfsjkO4KHI9XuVVOOnndPIsjuJmjhdV1cFMw48q8NJ6BzPuyvYmZ3oggi7aRI+Z0iCBlPCyKFgbGwYaArbWo1LIdi1qNSyFd1lSF0UVawb2HYf2Hh8d3etKtju1HoScWgzMSROBU8qac+MoBlAMoBlAZDy07TXFrhvBHIr1FVFuh6iqi3Q6HZa39IW6Kc4D8YkA9YcVbik7RiOOvpZu3hR/PcquraUUt0EjRhlQ0v/AOobj+XvU+sjyvunEhYrFkmzpspCkrTJgygLxo7+Ct/Ff4qvS+WnU6jDPpk6k4tkoBAEAQFP14cTW/2ZfFi0K709SHjXo6/BWMqcQhlAWPQ8IfXVE54xxho7zv8AALeoW3VXFnBmXe5/Il9YVJhs7mDcZntZx5cT4LZqnZYihicmSnW3HQopdvUg5Yk9MPDb7S7X2i4Dt2Stmkt2qFDDFtUpf3Ohjgq51Jo3g05tlSKshsJjIcfl15WOW2Rb7GCoydk7PtY5s1x2W544URd1scaZyvAMoBlAMoDGTy4oC1aGqSHVVK48Nl4Ge4+Co0LtFaXsGku1zDb1tCH2yObnFKPcdyyVjbx35GxizEWDNyUpeVKOZGUBetGfwRv4r/FV6Xy06nU4Z9MnUnVslAIAgCApuvvr7cPuzeMan1/p6kLGvR1+CrZU4hjKAuOhBmmrD0yj+lU6HwKdDg3lOX3+D5144iGiby8o4/D+68rl7qHzjK/psT3+CoZU0gH1DM+GaOaI4fE4Pb2gr6Y7K5Hcj6jesb0enA6hQVkdbSRVERGy9uezqV1jke3Mh2cUjZGI9vErGuhOPNXBx82yRjlt8s92cLSrs1ktsSMYSTK23hKplTSCMr0DKAZS4GUuBlATmjHn9O7PJ1O/PcWrboltIv2KeEOVKi3sWfVTQbBVk8gCPeFvVPlOLNel6Z/2OeE71GOTGUBfdFHNjb+K/wAVXpfLTqdThf0qdSeWyUAgCAICl/SCcVFt9mbxjU+v2b1IWNejr8FUypxCM5XgLjoF4NPWM5iRp7sKnQr3FT3OhwZf0nJ7/A16w+bUcg4NkIPeP7L2uTuovue4y28bV9/gp2VMOdGUBPaTvPmFR5rUO/Z5j6JP2HfI/wC+a3aSfKuR3ErYZV9m7sn7Lt9y8VlJDWU0kE7A5jxg9XX2qk5qORUU6GSNsrFY7ZTnV6tFRaZ8SAvgcf1co4HqPQVHngdEvscrWUbqZ3Nq8SOysBpHvRUdTXymKjidK8DJAIGB1kr7jifItmmeCnkndZh51EUtNL5KojfE/wBV4wV8vY5i2ch8SRPjWz0sp8ZXyYzGUBP6IYXXtz+UcDge8t+S3aFLyKpVwhv66u5IWbVrwywVQ9cBo94W9UraJSxiC5aZ5zvKiHJmMoeHQNEfwJv4r/FWKTyk6nU4V9KnUn1tFEIAgCApP0hnFRbPYm8Y1Pr9m9SFjXo6/BU8qaQhlAWPQtT5O7S07iAJ4st7W8vcT7lvUL7PVvMr4NJaVzOafj/JZNX0xqbFOW/vRYk928/DK3almaNUK2IRdpTORPuc4z71F31OSTXUZXgGV6C3aW1I0eSoLjKd26KZx49TvmqNNVX7jy9h+IoqJFKuvBfhS3VMMVTA6KZjZI3jDmu3ghb6oipZS05rXpZdipXDRjjJtW6cNYT9XNv2ew8fetCShRVuxSLPg6Kt4Vt7KT9htMdpoxEPSlcdqWT1j1dAC24YkjbZClS0zadmVOpt1lHT1sRiqoGSs6HDgvtzGu0VDNJGyRLPS6FB1TaYLVUw+aveYpQSGPOS0jHA8SO3f1qVVQtjVMvE5zEaSOnVFZsvAhMrVJhdNAU2IaqrP8xwY3sG/wDNU6Flmq7mdDg8do3Sc/g+9f1QjoaamaRtSybRHU3+5C9rnWYjeZ9YxJliRnNfwUjPXlSjnE2GUB0LQ38AZ+LJ/UrFJ5SdTqcK+lTr+SwLaKIQBAYKApP0jHFRbPYm8Y1Pr9m9SDjXo6/BUMqaQxlBc2LfVmhroKpvGF+0esc/hlZIn5Ho4zU8vYytkTgdXZJHUwNezD45G5HQ4EK6i3Q7JFRyX4KcuvVvdarjLSnPkwcxE82cvdw7lEnj7N9jkayn/p5Vbw3Q0crCaoygMbue9enhN2bU1XbAIXjzimG4Mc7e3sP5FbUNW6PRdUKVLickKZXap/JdbXqK2XAARVAjkP8AKl9Fw+fcqMc8b9lL8NbDMndcSwIPBZjaPKqqoKSEzVMrYowMlzjheK5GpdT5e9rEzOWyHM9R3b9L3HyrARDGNiEHiRneT2+GFHqZu0fpshylfVpUS3TZNiOhjkqJmQQt2pJCGtHWVga1XrZDVYx0jka3dTq1ro2W+3wUjDkRtwXes7me85KuxtRjUadjBEkMbY28Dn2rK8V16l2TmOAeSZjhuO8+/wAFKq5EfJ9jmsTm7WfTZun9yHytY0BtLwHRdCf4fj/Fk/qVik8pOp1OFfSp1/JYVtFEIAgMFAUf6SN1RbPZm/01Or/T1+CDjXo6/BT8qcQhlAY2sILnU9MQyQWCiZLnb8mDj1c7wO7grlOipGlzsKNqsp2NXkU/XdSJb0Im8IYgD2nep9a68luRFxiTNMjeSFdytMkjKAZQDKAxuxjARNNgbMFwrKfdBWVEY6GyELIksibOUztqpm6Ncp5z1M1Q7aqJpJTy8o4u8V457neJbnxJLJJ43Kp5FwGd44ZXx7GPYvmjrC6lb+kKxmzO9uIoz/LaeZ6z8O9VaSnyJmXc6XDaJYU7V6d5f4Q39V3gWu3lkR/apwWxdXS7u+Sy1EvZsXmbFfVf08Kqm67HNOCinJKZygME7kB0jQZzp5n40n9SsUnlIdVhX0rev5LEtoohAEAQFE+kr6+1+zN/pqdX+nr8EHG/R1+Cm5U4hDKA9qKE1dbBTN3mWRrPeV9xtzuRplgZ2krWc7HYmNbHGANwaMdgCvbHa7IceuNaKy4VNXndPK57cnly+GFBkdmeqnF1MvazOfzU9aW2XCsx5rRTy55huB7zuX02GR2yH1HSTyeFq/j8mLhb622uDa6mkhzwc7Bae8Ej4rySJ8fiQ8mppYfMbY1c78YWMwacDGUAygG1vHWgPalp56yYQ0kL5pD9lg8ejvX0xjnrZqGSKGSV2ViXL1pzSbKItqrjsSVLTtMjbvZGfzPWqkFKjNX7nQ0WGths6TV34Jq8XSmtNIaipd1MYOLz0BbMkqRtupv1FRHAzM9f+zl9zuE9yrZaqodlzzgAHcxvJoUSSRZXZlORqKh1RIsjv8GrnoWMwjKAbSA6VoH/AA6w/wCdJ/UrFH5SHVYV9K3r+SxraKIQBACgKH9JuRLa3Y9HEwJ/8anYh6evwQsbTRi/f4KVlTSAZylwWHQdJ5zqFkpGWUzHSZ6z6I8Xe5blE3NJfkVMJiz1GbkdMliZLE+N4Oy9pacHG4quqXSx06pdLKR9DYLTQAebUMTSN204bR953rEyGNmyGCKlhi8DUQ35HMiblxaxo5k4AWRdDOq2Pl8cVREWSNZJG4bwQCCmi6HiojkspXa7RVpqMupxLSOO/wDUu9H/ALTkDuwtV9HG7bRSfLhVO9boll9iKl0BKD+quTCOW3CQfFYVoOTjTdguvdf/AAfLdA1JPpXGIDpERP5heJQLxceJgq31f/BI0ehbdG7NXPPU9Lchjfhv+KzNoo2+LU2osIgYt3Kq/wDvYslHQ0tDF5OkgjhZ0MbhbTWtammhSjjZGlmpYhb7quite3DCW1NUN3k2Hc0/ePLxWCapZEluJpVWIRU6WTV3I55cbjU3OpNRVy7b/sgbmsHQByCkyyulW6nNVFRJO/M//BrZWMwDKXAygGV6eodM0ACNOxZ5yyH/ANlYo/JQ6rCk/wBK3r+SyLaKIQBAEBVfpGo3T2RlRGPSpZQ8+yRg+IPctOtZeLNyJeLRZ6fMnDU5rkqQcuMoC4aJuFttNDVVNfWRRSyyANZnL9kDoG/mt+kkjiYrnLYuYXLDBCrnuRFX4JGs1/RsyKKlnmx9qTDB8/BZnV7E8KXNmTGIW+BL/wAEBW61vNVkQyRUzf8AKbk+8rVfWyO20J0uLVD/AA6EFVVVRWPDqupmqCOBlkLsdmeC1nPc7dbk+SaSTxuVfubVtvVxtRHmVU9sf/Kd6TD3Hh3YWSOeSPwqZoKyeDwu099izUX0gSt9GtoWv+9C/HwK224h/vQqR40nrb+xJxa9tLv34quM9cYPgVmSuiXmbTcXpl4qnQy/XlnA9FlW89AiA8Sn9bEnM9XFqZOK/saFX9IMeCKOhcTyMzwPgFjdXp6UNeTGmW7jSuXTUt1uQcyWqdFEd3k4fRB7TxK1JKqV/GxMnxGol0vZPYiAcDdu7FrmiY2kA2kA2kA2kALsDJ4Dig1XY7DpujdQWWjp5BiQRgvHQ47z4q9CzJGjTtKWPsoWs5EospsBAEAQHjVwR1VPJBM3ajkaWuHSCvFRFSyny5qORUU43ebbNaLjLR1A/dOY3+uzkf8AfNQZo1jerVONq6d1PIrV2NLKxmuMoBlAMoBlAMoBlAMoBlAMoBlAMoBlAMoBlAMoCf0ZZ3Xa6MlkaTS0zg+Q+s4bw38+ztW1Sw9o+67IU8Mpe1lzrsh1YDCsnUn0gCAIAgCAhdTWCC+0fk34jnZ9VNjOyeg9IKwzwpK23E1aulbUsyrvwU5RcqCrtdU6mronRyDgeTh0g8wokkbolyuQ5SopnwOyvQ1drqK+TXG0vANpANpANpANpANpANpANpANpANpANpANpegbSAlLDYqy+VIZA0sgB/WTuHot6h0nqWaCF0rvY3aSikqXf8AHmdZtNtgtVFHSUjA2NnHpceZPSVajjbG3K06yKJkTEY3ZDeX2ZAgCAIAgCAwUBp3G30lwpzDWwMlZxAcOB6uhfDmNf3XIfEkLJG5XpdDlOsrTT2S4RQ0bpDHKM4kcDs9m7xyo9VC2J1mnMYhSxwO7lyDytYmDKAZQDKAZQDKAZQDKAZQDKAZQDKAt2hNP0N4ZNPXiSTyMmyIw7DTuB38zx6Vu0cDJLq4uYZRRSpnemx0mnijgibDDG2ONow1rRgBVkRE0QvMREboljYXp9hAEAQH/9k=">
-
-WHATSAPP ORDER
-
-</a>
-
-</div>
-
-</section><div style="text-align:center;">
-  <img
-    src="ChatGPT Image Jun 13, 2026, 12_24_26 PM.png"
-    style="max-width:1500px; width:100%; height:auto;"
-    alt="Quwwat Banner">
-</div>
-<!-- PRODUCTS -->
-
-<section id="products">
-
-<h2 class="section-title">
-Featured Products
-</h2>
-
-<div class="product-grid">
-
-<div class="product-card">
-
-<div class="product-badge">
-POPULAR
-</div>
-
-<img
-src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png"
-class="product-image"
-alt="QUWWAT 250g">
-
-<h3>QUWWAT 250g</h3>
-
-<p>Starter Pack</p>
-
-<div class="price">
-PKR 1,250
-</div>
-
-<ul class="product-features">
-<li>✓ Premium Formula</li>
-<li>✓ Nut & Seeds Blend</li>
-<li>✓ Great Taste</li>
-<li>✓ Daily Nutrition</li>
-</ul>
-
-<a href="https://wa.me/923337632631"
-class="btn btn-primary">
-ORDER NOW
-</a>
-
-</div>
-
-<div class="product-card featured-product">
-
-<div class="product-badge">
-BEST SELLER
-</div>
-
-<img
-src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png"
-class="product-image"
-alt="QUWWAT 500g">
-
-<h3>QUWWAT 500g</h3>
-
-<p>Value Pack</p>
-
-<div class="price">
-PKR 2,000
-</div>
-
-<ul class="product-features">
-<li>✓ Premium Formula</li>
-<li>✓ Nut & Seeds Blend</li>
-<li>✓ Best Value</li>
-<li>✓ Great Taste</li>
-</ul>
-
-<a href="https://wa.me/923337632631"
-class="btn btn-primary">
-ORDER NOW
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
+#products{background:#f8fafc;}
+#benefits{background:#f1f5f9;}
+#reviews{background:#e2e8f0;}
+#contact{background:#cbd5e1;}
 
 .product-grid{
 display:grid;
@@ -441,832 +113,174 @@ gap:30px;
 }
 
 .product-card{
-background:#fff;
-padding:40px;
-border-radius:25px;
+background:white;
+padding:35px;
+border-radius:24px;
 text-align:center;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.3s;
 }
 
 .product-card:hover{
-transform:translateY(-10px);
-}
-
-.featured-product{
-border:2px solid #2563eb;
-}
-
-.product-badge{
-display:inline-block;
-padding:8px 18px;
-border-radius:50px;
-background:#2563eb;
-color:white;
-font-weight:700;
-margin-bottom:20px;
+transform:translateY(-8px);
 }
 
 .product-image{
-width:100%;
 max-width:260px;
-display:block;
-margin:auto;
-margin-bottom:20px;
+width:100%;
 }
 
 .price{
-font-size:2.5rem;
+font-size:2.2rem;
 font-weight:800;
-color:#2563eb;
-margin:20px 0;
+margin:15px 0;
 }
 
-.product-features{
-list-style:none;
-margin:20px 0;
-}
-
-.product-features li{
-margin:10px 0;
-color:#6b7280;
-}
-
-</style><!-- PRODUCT DETAILS -->
-
-<section id="details">
-
-<h2 class="section-title">
-Product Details
-</h2>
-
-<div class="tabs">
-
-<button class="tab-btn active"
-onclick="openTab('description', event)">
-Description
-</button>
-
-<button class="tab-btn"
-onclick="openTab('information', event)">
-Additional Information
-</button>
-
-<button class="tab-btn"
-onclick="openTab('reviewsTab', event)">
-Reviews
-</button>
-
-</div>
-
-<div id="description" class="tab-content active-tab">
-
-<h2 class="product-heading">
-Premium Nut & Seeds Protein Formula
-</h2>
-
-<p class="product-text">
-
-QUWWAT is a premium nutrition formula created for individuals seeking performance, strength, recovery and daily wellness.
-
-Our Nut & Seeds Blend combines carefully selected ingredients to deliver a rich taste and premium nutrition experience.
-
-Designed for active lifestyles and fitness-focused individuals.
-
-</p>
-
-<h3>How To Use</h3>
-
-<h4>For Weight Gain</h4>
-
-<p class="product-text">
-
-✓ Mix In Milk<br>
-✓ Take 1 Table Spoon in the Morning with Full Fat Milk<br>
-✓ Take 1 Table Spoon in the Evening with Milk<br>
-✓ Use Consistently Every Day<br>
-✓ Add a Banana or Any Fruit of Your Choice
-
-</p>
-
-<h4>For Daily Nutrition</h4>
-
-<p class="product-text">
-
-✓ Take 1 Table Spoon Daily<br>
-✓ Mix In Low Fat Milk or Water<br>
-✓ Can Also Be Eaten Dry<br>
-✓ Pair With Meals for Complete Nutrition
-
-</p>
-
-</div>
-
-<div id="information" class="tab-content">
-
-<div class="info-grid">
-
-<div class="info-box">
-<h3>Brand</h3>
-<p>QUWWAT</p>
-</div>
-
-<div class="info-box">
-<h3>Founder</h3>
-<p>By The Ahmeds</p>
-</div>
-
-<div class="info-box">
-<h3>Flavor</h3>
-<p>Nut & Seeds</p>
-</div>
-
-<div class="info-box">
-<h3>Available Sizes</h3>
-<p>250g & 500g</p>
-</div>
-
-<div class="info-box">
-<h3>Country</h3>
-<p>Pakistan</p>
-</div>
-
-<div class="info-box">
-<h3>Category</h3>
-<p>Nutrition Supplement</p>
-</div>
-
-</div>
-
-</div>
-
-<div id="reviewsTab" class="tab-content">
-
-<div class="review-card">
-
-<div class="stars">★★★★★</div>
-
-<h3>Ali Khan</h3>
-
-<p>
-Amazing taste and premium packaging.
-Will definitely order again.
-</p>
-
-</div>
-
-<div class="review-card">
-
-<div class="stars">★★★★★</div>
-
-<h3>Ahmed Raza</h3>
-
-<p>
-One of the best nutrition products I've tried.
-</p>
-
-</div>
-
-<div class="review-card">
-
-<div class="stars">★★★★★</div>
-
-<h3>Usman</h3>
-
-<p>
-Excellent quality and fast delivery.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.tabs{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-margin-bottom:40px;
-}
-
-.tab-btn{
-padding:15px 30px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-font-weight:700;
-cursor:pointer;
-}
-
-.tab-btn.active{
-background:#111827;
-}
-
-.tab-content{
-display:none;
-background:#fff;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.active-tab{
-display:block;
-}
-
-.product-heading{
-font-size:2.5rem;
-margin-bottom:20px;
-}
-
-.product-text{
-line-height:2;
-color:#6b7280;
-margin-bottom:20px;
-}
-
-.info-grid{
+.benefit-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-.info-box{
-background:#f8fafc;
-padding:25px;
-border-radius:15px;
-}
-
-.info-box h3{
-color:#2563eb;
-margin-bottom:10px;
-}
-
-.review-card{
-background:#f8fafc;
-padding:25px;
-border-radius:15px;
-margin-bottom:15px;
-}
-
-.stars{
-color:#f59e0b;
-font-size:1.2rem;
-margin-bottom:10px;
-}
-
-</style>
-
-<!-- TRUSTED BY -->
-
-<section id="trusted">
-
-<h2 class="section-title">
-Trusted By
-</h2>
-
-<div class="logo-slider">
-
-<div class="logo-track">
-
-<div class="logo-box">FIT PRO</div>
-<div class="logo-box">POWER NUTRITION</div>
-<div class="logo-box">GYM HUB</div>
-<div class="logo-box">HEALTH LAB</div>
-<div class="logo-box">NUTRIX</div>
-
-<div class="logo-box">FIT PRO</div>
-<div class="logo-box">POWER NUTRITION</div>
-<div class="logo-box">GYM HUB</div>
-<div class="logo-box">HEALTH LAB</div>
-<div class="logo-box">NUTRIX</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.logo-slider{
-overflow:hidden;
-}
-
-.logo-track{
-display:flex;
-gap:20px;
-width:max-content;
-animation:slide 20s linear infinite;
-}
-
-.logo-box{
-min-width:220px;
-height:170px;
-background:#f8fafc;
-border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:700;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-
-@keyframes slide{
-0%{
-transform:translateX(0);
-}
-100%{
-transform:translateX(-50%);
-}
-}
-
-</style><!-- FAQ -->
-
-<section id="faq">
-
-<h2 class="section-title">
-Frequently Asked Questions
-</h2>
-
-<div class="faq-item">
-
-<button class="faq-btn">
-What is QUWWAT?
-</button>
-
-<div class="faq-content">
-QUWWAT is a premium nutrition formula created for performance, strength, recovery and active lifestyles.
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-btn">
-How do I order?
-</button>
-
-<div class="faq-content">
-Click any ORDER NOW button or contact us directly on WhatsApp for fast ordering.
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-btn">
-What sizes are available?
-</button>
-
-<div class="faq-content">
-QUWWAT is available in 250g and 500g packs.
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-btn">
-How should I use QUWWAT?
-</button>
-
-<div class="faq-content">
-Mix with milk, water, shakes or your favorite meal according to your nutrition goals.
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.faq-item{
-background:#fff;
-border-radius:15px;
-margin-bottom:15px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.faq-btn{
-width:100%;
-padding:25px;
-border:none;
-background:none;
-text-align:left;
-font-size:1rem;
-font-weight:700;
-cursor:pointer;
-color:#111827;
-}
-
-.faq-content{
-display:none;
-padding:0 25px 25px;
-color:#6b7280;
-line-height:1.8;
-}
-
-</style>
-
-<!-- CTA -->
-
-<section>
-
-<div class="cta-box">
-
-<h2>
-Ready To Experience QUWWAT?
-</h2>
-
-<p>
-Premium nutrition built for people who demand more from every day.
-</p>
-
-<a
-href="https://wa.me/923337632631"
-class="btn btn-primary">
-ORDER ON WHATSAPP
-</a>
-
-</div>
-
-</section>
-
-<style>
-
-.cta-box{
-padding:80px 40px;
-text-align:center;
-background:#f8fafc;
-border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.cta-box h2{
-font-size:3rem;
-margin-bottom:15px;
-}
-
-.cta-box p{
-color:#6b7280;
-margin-bottom:25px;
-}
-</style>
-<section id="checkout" style="padding:80px 5%;">
-<section id="order-form" style="padding:80px 5%;">
-
-<h2 class="section-title">Order Form</h2>
-
-<iframe
-src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
-width="100%"
-height="1200"
-frameborder="0"
-marginheight="0"
-marginwidth="0">
-Loading…
-</iframe>
-
-</section>
-<div style="
-max-width:800px;
-margin:auto;
-background:#fff;
+.benefit{
+background:white;
 padding:30px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-">
-
-<h2 style="margin-bottom:25px;">Contact</h2>
-
-<input type="text" placeholder="Email or Mobile Phone Number"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<h2 style="margin-bottom:25px;">Delivery</h2>
-
-<select style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-<option>Pakistan</option>
-</select>
-
-<input type="text" placeholder="First Name"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="Last Name"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="Address"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="Apartment, Suite, etc. (Optional)"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="City"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="Postal Code"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<h2 style="margin-bottom:20px;">Payment Method</h2>
-
-<label style="display:block;margin-bottom:15px;">
-<input type="radio" name="payment" checked onclick="showPayment('cod')">
- Cash On Delivery
-</label>
-
-<label style="display:block;margin-bottom:20px;">
-<input type="radio" name="payment" onclick="showPayment('bank')">
- Bank Payment
-</label>
-
-<div id="bankSection" style="display:none;">
-
-<select style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-<option>Select Payment Method</option>
-<option>Meezan Bank</option>
-<option>EasyPaisa</option>
-<option>JazzCash</option>
-</select>
-
-<input type="text" placeholder="Account Number"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-<input type="text" placeholder="Transaction ID"
-style="width:100%;padding:15px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px;">
-
-</div>
-
-<button type="submit" style="
-width:100%;
-padding:18px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:12px;
-font-size:18px;
-font-weight:700;
-cursor:pointer;">
-PLACE ORDER
-</button>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer id="contact">
-
-<div class="footer-grid">
-
-<div>
-
-
-
-</div>
-
-</div>
-
-</footer>
-
-<script>
-function showPayment(type){
-    const bankSection = document.getElementById("bankSection");
-
-    if(type === "bank"){
-        bankSection.style.display = "block";
-    } else {
-        bankSection.style.display = "none";
-    }
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
-</script>
-<!-- FOOTER -->
 
-<footer id="contact">
+.review{
+background:white;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+}
 
-<div class="footer-grid">
-
-<div>
-
-<img src="c:\Users\MC\Downloads\ChatGPT Image Jun 12, 2026, 02_54_40 AM.png"
-alt="QUWWAT Logo"
-style="max-width:250px;width:100%;">
-
-<p style="margin-top:15px;">
-Premium Nutrition By The Ahmeds
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<p><a href="#home">Home</a></p>
-<p><a href="#products">Products</a></p>
-<p><a href="#details">Details</a></p>
-<p><a href="#faq">FAQ</a></p>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<p>WhatsApp Orders</p>
-<p>Pakistan</p>
-<p>+92 333 7632631</p>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copyright">
-© 2026 QUWWAT • All Rights Reserved
-</p>
-
-</footer>
-
-<style>
+.cta{
+background:white;
+padding:60px;
+border-radius:28px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
 
 footer{
 background:#111827;
 color:white;
-padding:80px 5%;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-}
-
-footer h3{
-margin-bottom:15px;
-}
-
-footer a{
-text-decoration:none;
-color:#d1d5db;
-}
-
-footer a:hover{
-color:white;
-}
-
-footer hr{
-margin:30px 0;
-border:none;
-height:1px;
-background:rgba(255,255,255,.1);
-}
-
-.copyright{
+padding:60px 5%;
 text-align:center;
-color:#9ca3af;
 }
 
-</style><!-- WHATSAPP FLOATING BUTTON -->
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all .8s ease;
+}
 
-<a href="https://wa.me/923337632631"
-class="whatsapp-float">
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
 
-<img src="data:image/png;base64,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"
-alt="WhatsApp">
+@media(max-width:768px){
+.logo img{height:70px;}
+.navbar ul{gap:15px;flex-wrap:wrap;}
+.section-title{font-size:2rem;}
+}
+</style>
+</head>
+<body>
 
+<header class="top-header">
+<div class="header-top">
+<a href="#" class="logo">
+<img src="ChatGPT Image Jun 13, 2026, 12_36_31 PM.png" alt="Logo">
 </a>
 
-<style>
+<a href="https://wa.me/923337632631" class="btn btn-primary">
+WhatsApp Order
+</a>
+</div>
 
-.whatsapp-float{
-position:fixed;
-right:25px;
-bottom:25px;
-width:70px;
-height:70px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-justify-content:center;
-align-items:center;
-box-shadow:0 10px 30px rgba(0,0,0,.2);
-z-index:999;
-}
+<nav class="navbar">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#benefits">Benefits</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-.whatsapp-float img{
-width:38px;
-height:38px;
-object-fit:contain;
-}
+<section class="hero fade" id="home">
+<img src="ChatGPT Image Jun 13, 2026, 12_24_26 PM.png" class="hero-banner">
+</section>
 
-</style>
+<section id="products" class="fade">
+<h2 class="section-title">Featured Products</h2>
 
-<script>
+<div class="product-grid">
 
-/* SEARCH SUGGESTIONS */
+<div class="product-card">
+<img src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png" class="product-image">
+<h3>QUWWAT 250g</h3>
+<p>Starter Pack</p>
+<div class="price">PKR 1,250</div>
+<a href="https://wa.me/923337632631" class="btn btn-primary">Order Now</a>
+</div>
 
-const searchInput =
-document.getElementById("searchInput");
+<div class="product-card">
+<img src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png" class="product-image">
+<h3>QUWWAT 500g</h3>
+<p>Best Seller</p>
+<div class="price">PKR 2,000</div>
+<a href="https://wa.me/923337632631" class="btn btn-primary">Order Now</a>
+</div>
 
-const suggestions =
-document.getElementById("suggestions");
+</div>
+</section>
 
-searchInput.addEventListener("input",()=>{
+<section id="benefits" class="fade">
+<h2 class="section-title">Why QUWWAT?</h2>
 
-if(searchInput.value.length > 0){
+<div class="benefit-grid">
+<div class="benefit"><h3>Premium Ingredients</h3><p>Carefully selected nuts and seeds.</p></div>
+<div class="benefit"><h3>Daily Nutrition</h3><p>Supports an active lifestyle.</p></div>
+<div class="benefit"><h3>Great Taste</h3><p>Easy to mix with milk or shakes.</p></div>
+</div>
+</section>
 
-suggestions.style.display="block";
+<section id="reviews" class="fade">
+<h2 class="section-title">Customer Reviews</h2>
+<div class="review">★★★★★ Amazing quality and packaging.</div>
+<div class="review">★★★★★ Excellent nutrition and taste.</div>
+<div class="review">★★★★★ Fast delivery and premium feel.</div>
+</section>
 
-}else{
+<section id="contact" class="fade">
+<div class="cta">
+<h2>Ready to Experience QUWWAT?</h2>
+<p style="margin:15px 0 25px;">Order directly on WhatsApp.</p>
+<a href="https://wa.me/923337632631" class="btn btn-primary">Order Now</a>
+</div>
+</section>
 
-suggestions.style.display="none";
-
-}
-
-});
-
-document.addEventListener("click",(e)=>{
-
-if(!e.target.closest(".search-wrapper")){
-
-suggestions.style.display="none";
-
-}
-
-});
-
-/* PRODUCT TABS */
-
-function openTab(tabId,event){
-
-document
-.querySelectorAll(".tab-content")
-.forEach(tab=>{
-
-tab.classList.remove("active-tab");
-
-});
-
-document
-.querySelectorAll(".tab-btn")
-.forEach(btn=>{
-
-btn.classList.remove("active");
-
-});
-
-document
-.getElementById(tabId)
-.classList.add("active-tab");
-
-event.target
-.classList.add("active");
-
-}
-
-/* FAQ */
-
-document
-.querySelectorAll(".faq-btn")
-.forEach(btn=>{
-
-btn.addEventListener("click",()=>{
-
-const content =
-btn.nextElementSibling;
-
-content.style.display =
-content.style.display === "block"
-? "none"
-: "block";
-
-});
-
-});
-
-</script>
-
+<footer>
+<p>© 2026 QUWWAT • All Rights Reserved</p>
+</footer>
 
 <script>
-window.addEventListener('scroll', function(){
-  const header=document.querySelector('.top-header');
-  if(window.scrollY > 50){
-    header.style.transform='translateY(-100%)';
-  } else {
-    header.style.transform='translateY(0)';
-  }
+const fades=document.querySelectorAll('.fade');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
 });
+});
+fades.forEach(el=>observer.observe(el));
 </script>
-<style>
-.top-header{transition:transform .35s ease;}
-</style>
+
 </body>
 </html>

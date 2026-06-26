@@ -186,26 +186,91 @@ transform:translateY(0);
 <img src="ChatGPT Image Jun 13, 2026, 12_24_26 PM.png" class="hero-banner">
 </section>
 
-<section id="products" class="fade">
-<h2 class="section-title">Featured Products</h2>
-<div class="product-grid">
-<div class="product-card">
-<img src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png" class="product-image">
-<h3>QUWWAT 250g</h3>
-<p>Starter Pack</p>
-<div class="price">PKR 1,250</div>
-<a href="https://wa.me/923337632631" class="btn btn-primary">Order Now</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QUWWAT V Final (Extended)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:linear-gradient(#fff,#eef2f7,#cbd5e1);color:#111}
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:#2563eb;z-index:9999}
+header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(12px);padding:15px 5%;display:flex;justify-content:space-between;align-items:center}
+nav a{margin:0 10px;color:#111;text-decoration:none}
+section{padding:60px 5%}
+.hero img{width:100%;border-radius:20px}
+.gallery{display:grid;grid-template-columns:100px 1fr 420px;gap:20px;align-items:start}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumb{width:90px;height:90px;object-fit:cover;border:2px solid #ddd;border-radius:10px;cursor:pointer}
+.thumb.active{border-color:#111}
+#mainImg{width:100%;border-radius:18px}
+.info h2{font-size:38px}
+.price{font-size:34px;font-weight:bold}
+.old{text-decoration:line-through;color:#777;margin-left:8px}
+.save{background:#ff6b35;color:#fff;padding:4px 8px;border-radius:6px;margin-left:8px}
+.qty{display:flex;margin:20px 0}.qty button,.qty input{width:55px;height:45px}
+.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:15px 30px;border-radius:999px}
+.desc{margin-top:50px;background:#fff;padding:30px;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.tabs{display:flex;gap:15px;margin-bottom:20px}
+.tab{padding:12px 22px;border-radius:12px;background:#2563eb;color:#fff}
+.tab.active{background:#111}
+@media(max-width:900px){.gallery{grid-template-columns:1fr}.thumbs{flex-direction:row}.info h2{font-size:28px}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header>
+<img src="ChatGPT Image Jun 13, 2026, 12_36_31 PM.png" style="height:70px">
+<nav><a href="#product">Product</a><a href="#description">Description</a></nav>
+<a class="btn" href="https://wa.me/923337632631">WhatsApp Order</a>
+</header>
+
+<section class="hero"><img src="ChatGPT Image Jun 13, 2026, 12_24_26 PM.png"></section>
+
+<section id="product">
+<div class="gallery">
+<div class="thumbs">
+<img src="smallphoto1.png" class="thumb active" onclick="swap(this,'product1.png')">
+<img src="smallphoto2.png" class="thumb" onclick="swap(this,'product2.png')">
+<img src="smallphoto3.png" class="thumb" onclick="swap(this,'product3.png')">
+<img src="smallphoto4.png" class="thumb" onclick="swap(this,'product4.png')">
+<img src="smallphoto5.png" class="thumb" onclick="swap(this,'product5.png')">
+</div>
+<div><img id="mainImg" src="product1.png"></div>
+<div class="info">
+<h2>QUWWAT Premium Nutrition</h2>
+<div class="price">Rs.2,000 <span class="old">Rs.2,500</span><span class="save">Save Rs.500</span></div>
+<div class="qty"><button onclick="chg(-1)">-</button><input id="q" value="1" readonly><button onclick="chg(1)">+</button></div>
+<a class="btn" href="https://wa.me/923337632631">Order Now</a>
+<ul style="margin-top:20px;line-height:2">
+<li>Premium Nuts & Seeds Blend</li>
+<li>Daily Nutrition</li>
+<li>Supports Strength & Recovery</li>
+<li>Great Taste</li>
+</ul>
+</div>
 </div>
 
-<div class="product-card">
-<img src="ChatGPT Image Jun 13, 2026, 12_24_33 PM.png" class="product-image">
-<h3>QUWWAT 500g</h3>
-<p>Best Seller</p>
-<div class="price">PKR 2,000</div>
-<a href="https://wa.me/923337632631" class="btn btn-primary">Order Now</a>
-</div>
+<div id="description" class="desc">
+<div class="tabs"><div class="tab active">Description</div><div class="tab">Additional Information</div><div class="tab">Reviews</div></div>
+<h2>Premium Nut & Seeds Protein Formula</h2>
+<p style="margin:15px 0;line-height:1.8">QUWWAT is a premium nutrition formula created for individuals seeking performance, strength, recovery and daily wellness. Our Nut & Seeds Blend combines carefully selected ingredients to deliver a rich taste and premium nutrition experience.</p>
+<h3>How To Use</h3>
+<p><b>Weight Gain</b></p>
+<ul><li>Mix in milk.</li><li>Morning & evening with full-fat milk.</li><li>Use consistently every day.</li></ul>
+<p style="margin-top:10px"><b>Daily Nutrition</b></p>
+<ul><li>1 tablespoon daily.</li><li>Mix with milk or water.</li><li>Can also be eaten dry.</li></ul>
 </div>
 </section>
+
+<script>
+function swap(el,img){mainImg.src=img;document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('active'));el.classList.add('active')}
+function chg(v){let q=document.getElementById('q');q.value=Math.max(1,parseInt(q.value)+v)}
+window.addEventListener('scroll',()=>{let h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(scrollY/h*100)+'%'})
+</script>
+</body></html>
 
 <section id="benefits" class="fade">
 <h2 class="section-title">Why QUWWAT?</h2>
